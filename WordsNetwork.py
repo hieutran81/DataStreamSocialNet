@@ -114,7 +114,7 @@ def init():
 def visit(start):
     global visited
     stack = []
-    print(arr[start])
+    #print(arr[start])
     stack.append(start)
     while (len(stack) > 0):
         u = stack.pop()
@@ -123,7 +123,7 @@ def visit(start):
         while (i != 0):
             v = adj[i]
             if (visited[v] == False):
-                print(arr[v])
+                #print(arr[v])
                 stack.append(v)
                 visited[v] = True
             i = link[i]
@@ -201,9 +201,9 @@ def cauC():
     print("SO tam giac thuong: %d "%(numTri/3))
 
 def process():
-    #cauA()
-    #cauB()
-    cauC()
+    cauA()
+    cauB()
+    #cauC()
 
 
 
